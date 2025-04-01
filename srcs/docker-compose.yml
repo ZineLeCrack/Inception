@@ -35,5 +35,15 @@ networks:
 
 volumes:
   database:
+    driver: local
+    driver_opts:
+      type: none
+      device: /home/rlebaill/data/database
+      o: bind
   web:
+    driver: local
+    driver_opts:
+      type: none
+      device: /home/rlebaill/data/web
+      o: bind
 
