@@ -1,4 +1,4 @@
-FROM debian:11.11
+FROM debian:12.10
 
 RUN apt update && apt upgrade && apt install -y php-fpm php-mysqli curl
 
